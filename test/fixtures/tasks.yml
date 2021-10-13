@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyString
+  importance: 1
+  urgency: 1
+  completed: false
+  date_added: 2021-10-13
+  date_completed: 2021-10-13
+  user_id: 1
+
+two:
+  description: MyString
+  importance: 1
+  urgency: 1
+  completed: false
+  date_added: 2021-10-13
+  date_completed: 2021-10-13
+  user_id: 1
