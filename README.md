@@ -6,7 +6,7 @@ This is the repo for the back end, and you can visit the hosted app [here](http:
 
 ## Models and Relationships
 
-The models for this app are relatively simple:
+The models for this app are relatively"simple":
 
 ![One Thing Well ERD](readme/OTW10_erd.png)
 
@@ -39,9 +39,9 @@ Creates a new user. Returns the user object.
 
 ```json
   { 
-    email: "spike@bebop.com",
-    password: "$v1c10us!Sux%",
-    confirm_password: "$v1c10us!Sux%",
+    "email": "spike@bebop.com",
+    "password": "$v1c10us!Sux%",
+    "confirm_password": "$v1c10us!Sux%",
   }
 ```
 
@@ -51,8 +51,8 @@ Logs a user in with email and password. When a user logs in, a random set of tas
 
 ```json
   { 
-    email: "spike@bebop.com",
-    password: "$v1c10us!Sux%",
+    "email": "spike@bebop.com",
+    "password": "$v1c10us!Sux%",
   }
 ```
 
@@ -61,15 +61,15 @@ Logs a user in with email and password. When a user logs in, a random set of tas
 Returns a dump of all the user's task info. Not exposed in the app.
 
 ```json
-  { tasks: [
+  {"tasks": [
     {
-      id: 1,
-      description: "Get a haircut",
-      importance: 1,
-      urgency: 1,
-      completed: false,
-      date_added: "2016-01-01",
-      date_completed: null,
+     "id": 1,
+     "description": "Get a haircut",
+     "importance": 1,
+     "urgency": 1,
+     "completed": false,
+     "date_added": "2016-01-01",
+     "date_completed": null,
     },
     { ... }
   ]}
@@ -80,11 +80,11 @@ Returns a dump of all the user's task info. Not exposed in the app.
 Returns a list of the user's completed tasks.  
 
 ```json
-  { tasks: [
+  {"tasks": [
     { 
-      id: 6,
-      description: "Catch up with Vicious",
-      date_completed: "2016-01-01",
+     "id": 6,
+     "description": "Catch up with Vicious",
+     "date_completed": "2016-01-01",
     },
     { ... }
   ]}
@@ -96,8 +96,8 @@ Creates a new task with a starting importance and urgency of 10. Returns the tas
 
 ```json
   { 
-    id: 8,
-    description: "Get another haircut"
+   "id": 8,
+   "description": "Get another haircut"
   }
 ```
 
@@ -107,8 +107,8 @@ Returns the current task for the user.
 
 ```json
   {
-    id: 11,
-    description: "Get Ein a haircut"
+   "id": 11,
+   "description": "Get Ein a haircut"
   }
 ```
 
@@ -118,8 +118,8 @@ Rejects the current task, if any, grabs a new task from the bucket, sets it as t
 
 ```json
   {
-    id: 15,
-    description: "Refuel the Bebop"
+   "id": 15,
+   "description": "Refuel the Bebop"
   }
 ```
 
@@ -129,8 +129,8 @@ Delays the current task, gets a new task from the bucket, sets it as the current
 
 ```json
   {
-    id: 23,
-    description: "Clean the fridge"
+   "id": 23,
+   "description": "Clean the fridge"
   }
 ```
 
@@ -140,7 +140,7 @@ Permanently deletes the current task. A new task is chosen, set to current, and 
 
 ```json
   {
-    id: 24,
-    description: "Find a new job"
+   "id": 24,
+   "description": "Find a new job"
   }
 ```
